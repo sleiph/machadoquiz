@@ -1,0 +1,43 @@
+{
+    "bg": "https://puraakhabar.com/wp-content/uploads/2020/12/axeman-of-new-orleans-lede.jpg",
+    "title": "Quiz Machado da Alura",
+    "description": "Teste os seus conhecimentos sobre o mundo dos machados, machadinhas, machetes e associados.",
+    "questions": [
+      {
+        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "title": "Como fazer um seletor por id via CSS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Como fazer um background gradiente com css?",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+           "background: linear-gradient(#e66465, #9198e5);",
+           "background: gradient(#e66465, #9198e5);"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#BF6336",
+        "secondary": "#228280",
+        "mainBg": "#523A28",
+        "contrastText": "#FFFFFF",
+        "wrong": "#fc003a",
+        "success": "#00c936"
+      },
+      "borderRadius": "4px"
+    }
+  }

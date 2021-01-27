@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 // src/components/QuizBackground/index.js
 import styled from 'styled-components';
 

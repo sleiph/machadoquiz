@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 import styled from 'styled-components';
 
 import React from 'react';

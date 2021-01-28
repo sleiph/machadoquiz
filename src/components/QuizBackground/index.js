@@ -1,7 +1,6 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
 // src/components/QuizBackground/index.js
-import styled from 'styled-components';
+
+import styled from 'styled-components'
 
 const QuizBackground = styled.div`
   width: 100%;
@@ -33,6 +32,6 @@ const QuizBackground = styled.div`
       z-index: 10;
     }
   }
-`;
+`
 
 export default QuizBackground;

@@ -1,9 +1,7 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
-import React from 'react';
-import styled from 'styled-components';
-
 // src/components/Footer/index.js
+
+import styled from 'styled-components'
+
 const FooterWrapper = styled.footer`
   background-color: #00000070;
   padding: 20px;
@@ -30,7 +28,6 @@ const FooterWrapper = styled.footer`
 
 export default function Footer(props) {
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
       <a href="https://www.alura.com.br/">
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
@@ -45,5 +42,5 @@ export default function Footer(props) {
         </a>
       </p>
     </FooterWrapper>
-  );
+  )
 }

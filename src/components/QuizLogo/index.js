@@ -1,9 +1,6 @@
-/* eslint linebreak-style: ["error", "windows"] */
+import styled from 'styled-components'
 
-import styled from 'styled-components';
-
-import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 function Logo({ className }) {
   return (
@@ -28,7 +25,7 @@ function Logo({ className }) {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
 Logo.propTypes = {
@@ -41,6 +38,6 @@ const QuizLogo = styled(Logo)`
   @media screen and (max-width: 500px) {
     margin: 0;
   }
-`;
+`
 
-export default QuizLogo;
+export default QuizLogo

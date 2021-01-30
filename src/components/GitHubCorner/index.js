@@ -1,5 +1,3 @@
-// src/components/GitHubCorner/index.js
-
 import styled from 'styled-components'
 
 const Wrapper = styled.div`

@@ -11,4 +11,4 @@ const QuizContainer = styled.div`
   }
 `
 
-export default QuizContainer;
+export default QuizContainer

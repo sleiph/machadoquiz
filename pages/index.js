@@ -4,14 +4,15 @@ import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 
 import db from '../db.json'
-import Widget from '../src/components/Widget'
-import Link from '../src/components/Link'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
+
+import Button from '../src/components/Button'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
 import Input from '../src/components/Input'
-import Button from '../src/components/Button'
+import Link from '../src/components/Link'
+import QuizBackground from '../src/components/QuizBackground'
+import QuizLogo from '../src/components/QuizLogo'
+import Widget from '../src/components/Widget'
 
 const QuizContainer = styled.div`
   width: 100%;

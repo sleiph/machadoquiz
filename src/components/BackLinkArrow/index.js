@@ -8,11 +8,11 @@ const StyledLink = styled(Link)`
   &:hover {
     opacity: .5;
   }
-`;
+`
 
 const SVG = styled.svg`
   vertical-align: middle;
-`;
+`
 
 export default function BackLinkArrow({ href }) {
   return (
@@ -21,9 +21,9 @@ export default function BackLinkArrow({ href }) {
         <path fillRule="evenodd" clipRule="evenodd" d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="white" fillOpacity="0.87" />
       </SVG>
     </StyledLink>
-  );
+  )
 }
 
 BackLinkArrow.propTypes = {
   href: PropTypes.string.isRequired,
-};
+}

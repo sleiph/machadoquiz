@@ -1,6 +1,8 @@
 import { ThemeProvider } from 'styled-components'
-import QuizScreen from '../../src/screens/Quiz'
+
 import db from '../../db.json'
+
+import QuizScreen from '../../src/screens/Quiz'
 
 export default function QuizDaGaleraPage() {
   return (
@@ -10,5 +12,5 @@ export default function QuizDaGaleraPage() {
         externalBg={db.bg}
       />
     </ThemeProvider>
-  );
+  )
 }

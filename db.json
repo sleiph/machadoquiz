@@ -1,42 +1,84 @@
 {
-  "bg": "http://2.bp.blogspot.com/-Ln8KNE4wudo/Td-cibDrspI/AAAAAAAACCY/WKugU9e5zAg/s1600/m+%25288%2529.JPG",
-  "title": "Quiz Machado da Alura",
+  "bg": "https://cdn11.bigcommerce.com/s-r3utmtjwwz/images/stencil/2048x2048/products/46292/199247/the-woodcutter_winslow-homer__57136.1556902371.jpg",
+  "title": "Quiz Machado da Alura 🪓",
   "description": "Teste os seus conhecimentos sobre o mundo dos machados, machadinhas, machetes e associados.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://data.whicdn.com/images/300872576/original.gif",
+      "title": "Qual escritor realista nomeia o principal prêmio literário brasileiro? ",
+      "description": "A resposta certa é 'Machado'.",
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Machado",
+        "Azevedo",
+        "Bilac",
+        "Barreto"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://i.gifer.com/Lt48.gif",
+      "title": "Em Fire Emblem, qual arma é forte contra lanças, mas fraca contra espadas?",
+      "description": "A resposta certa é 'Machado'.",
+      "answer": 1,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Arco",
+        "Machado",
+        "Cajado"
+      ]
+    },
+    {
+      "image": "https://i.imgur.com/gcKSLhu.gif",
+      "title": "Bardiche é uma arma de origem russa que se assemelha a qual outro instrumento de guerra?",
+      "description": "A resposta certa é 'Machado'.",
+      "answer": 2,
+      "alternatives": [
+        "Espada",
+        "Lança",
+        "Machado",
+        "Trabuco"
+      ]
+    },
+    {
+      "image": "https://thumbs.gfycat.com/BriefPossibleDuckbillcat-size_restricted.gif",
+      "title": "Qual ferramenta melhor se encaixa na seguinte descrição:\nMartelo concebido para o corte e derrubada de árvores?",
+      "description": "A resposta certa é 'Machado'.",
+      "answer": 3,
+      "alternatives": [
+        "Martelo",
+        "Motosserra",
+        "Espada",
+        "Machado"
+      ]
+    },
+    {
+      "image": "https://cdn130.picsart.com/339193649030201.gif",
+      "title": "Qual das alternativas abaixo está correta?",
+      "description": "A resposta certa é 'Machado'.",
+      "answer": 4,
+      "alternatives": [
+        "Machado",
+        "Machado",
+        "Machado",
+        "Machado",
+        "Machado"
       ]
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://quiz-valorant.johnatanivini.vercel.app/",
+    "https://pinkfloyd-quiz.denismend.vercel.app/",
+    "https://imersao-react-alura.tamirfaria.vercel.app/"
   ],
   "theme": {
     "colors": {
-      "primary": "#BF6336",
-      "secondary": "#228280",
-      "mainBg": "#523A28",
+      "primary": "#627581",
+      "secondary": "#A47138",
+      "hover": "#85A7C1",
+      "mainBg": "#333440",
       "contrastText": "#FFFFFF",
-      "wrong": "#fc003a",
-      "success": "#00c936"
+      "wrong": "#712E26",
+      "success": "#404536"
     },
     "borderRadius": "4px"
   }

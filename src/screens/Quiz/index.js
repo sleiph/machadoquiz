@@ -1,40 +1,30 @@
 import { Lottie } from '@crello/react-lottie'
 
-import Widget from '../../components/Widget'
-import QuizLogo from '../../components/QuizLogo'
+import loadingAnimation from './animations/loading.json'
+
+import AlternativesForm from '../../components/AlternativesForm'
+import BackLinkArrow from '../../components/BackLinkArrow'
+import Button from '../../components/Button'
 import QuizBackground from '../../components/QuizBackground'
 import QuizContainer from '../../components/QuizContainer'
-import AlternativesForm from '../../components/AlternativesForm'
-import Button from '../../components/Button'
-import BackLinkArrow from '../../components/BackLinkArrow'
-
-import loadingAnimation from './animations/loading.json'
+import QuizLogo from '../../components/QuizLogo'
+import Widget from '../../components/Widget'
 
 function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado:
+        Resultados:
       </Widget.Header>
 
       <Widget.Content>
-        <p>
-          Você acertou
-          {' '}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
-        </p>
+        <h2>
+          {`Você acertou ${parseInt((results.filter((x) => x).length/results.length)*100)}% das perguntas`}
+        </h2>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${index}`}>
-              #
-              {index + 1}
-              {' '}
-              Resultado:
-              {result === true
-                ? 'Acertou'
-                : 'Errou'}
+              {`Você ${result === true ? 'acertou' : 'errou'} a pergunta #${index + 1}`}
             </li>
           ))}
         </ul>
@@ -144,7 +134,7 @@ function QuestionWidget({
             Confirmar
           </Button>
           {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && !isCorrect && <p>A resposta certa era Machado...</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>

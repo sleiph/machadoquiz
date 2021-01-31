@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import Head from 'next/head'
-import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
+// "banco de dados"
 import db from '../db.json'
 
+// componentes
 import Button from '../src/components/Button'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
@@ -18,7 +20,7 @@ const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
-  margin: auto 10%;
+  margin: auto 10% 45px auto;
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
@@ -33,8 +35,7 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>
-          AluraQuiz -
-          {db.title}
+          {`AluraQuiz - ${db.title}`}
         </title>
       </Head>
       <QuizContainer>
@@ -55,15 +56,14 @@ export default function Home() {
           <Widget.Content>
             <p>{db.description}</p>
             <form onSubmit={function (infosDoEvento) {
-              infosDoEvento.preventDefault();
-              router.push(`/quiz?name=${name}`);
-              console.log('Fazendo uma submissão por meio do react');
+              infosDoEvento.preventDefault()
+              router.push(`/quiz?name=${name}`)
             }}
             >
               <Input
                 name="nomeDoUsuario"
                 onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
-                placeholder="Diz ai seu nome"
+                placeholder="Ferramenta de corte preferida"
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
@@ -84,7 +84,7 @@ export default function Home() {
           animate="show"
         >
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
+            <h1>Quizeses das Galeras</h1>
 
             <ul>
               {db.external.map((linkExterno) => {
@@ -119,7 +119,7 @@ export default function Home() {
           animate="show"
         />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/sleiph/machadoquiz" />
     </QuizBackground>
   )
 }

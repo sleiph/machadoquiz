@@ -14,7 +14,6 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     font-family: 'Cormorant', serif;
-    // Deixa branco no começo
     color: ${({ theme }) => theme.colors.contrastText};
   }
   html, body {

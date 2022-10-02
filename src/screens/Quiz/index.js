@@ -1,5 +1,6 @@
 import { Lottie } from '@crello/react-lottie'
 
+import React, { useEffect, useState } from "react";
 import loadingAnimation from './animations/loading.json'
 
 import AlternativesForm from '../../components/AlternativesForm'
@@ -60,8 +61,8 @@ function QuestionWidget({
   onSubmit,
   addResult,
 }) {
-  const [selectedAlternative, setSelectedAlternative] = React.useState(undefined);
-  const [isQuestionSubmited, setIsQuestionSubmited] = React.useState(false);
+  const [selectedAlternative, setSelectedAlternative] = useState(undefined);
+  const [isQuestionSubmited, setIsQuestionSubmited] = useState(false);
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternativeSelected = selectedAlternative !== undefined;
@@ -145,9 +146,9 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 export default function QuizPage({ externalQuestions, externalBg }) {
-  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
-  const [results, setResults] = React.useState([]);
-  const [currentQuestion, setCurrentQuestion] = React.useState(0);
+  const [screenState, setScreenState] = useState(screenStates.LOADING);
+  const [results, setResults] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
   const question = externalQuestions[questionIndex];
   const totalQuestions = externalQuestions.length;
@@ -161,7 +162,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
     ]);
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);

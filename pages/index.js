@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import React, { useState } from "react";
 import { motion } from 'framer-motion'
 
 // "banco de dados"
@@ -29,7 +30,7 @@ const QuizContainer = styled.div`
 
 export default function Home() {
   const router = useRouter()
-  const [name, setName] = React.useState('')
+  const [name, setName] = useState('')
 
   return (
     <QuizBackground backgroundImage={db.bg}>
